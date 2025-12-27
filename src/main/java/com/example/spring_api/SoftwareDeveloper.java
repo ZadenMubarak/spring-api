@@ -1,9 +1,15 @@
 package com.example.spring_api;
 
+import jakarta.persistence.Entity;
+import org.springframework.data.annotation.Id;
+
 import java.util.Objects;
 
+
+@Entity
 public class SoftwareDeveloper {
 
+    @Id
     private int age;
     private String name;
     private String techStack;
